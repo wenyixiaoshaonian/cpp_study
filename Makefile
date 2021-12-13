@@ -13,13 +13,13 @@
 CC ?= gcc
 CXX ?= g++
 
-objects = myfirst.o
+objects = name_space.o
 
-myfirst : $(objects)
+name_space : $(objects)
 	$(CXX) -o  $@ -g $(objects)
 
 $(objects) : %.o:%.cpp
 	$(CXX) -c -g  $< -o $@
 
 clean :
-	rm *.o myfirst
+	rm *.o name_space

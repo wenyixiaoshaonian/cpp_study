@@ -12,15 +12,15 @@
 
 CC ?= gcc
 CXX ?= g++
-INC_CLUDE = -I/home/caoboxi/test/c++/cpp_study/dy_class
+INC_CLUDE = -I/home/caoboxi/test/c++/cpp_study/pass_class
 
-objects = use_dy.o dy_demo.o
+objects = use_pass.o pass_class.o
 
-use_dy : $(objects)
+pass_class : $(objects)
 	$(CXX) -o  $@ -g $(objects)
 
 $(objects) : %.o:%.cpp
 	$(CXX) -c -g  $< -o $@ $(INCLUDE)
 
 clean :
-	rm *.o use_dy
+	rm *.o pass_class

@@ -12,7 +12,7 @@
 
 CC ?= gcc
 CXX ?= g++
-INC_CLUDE = -I/home/caoboxi/test/c++/cpp_study/private_class
+INC_CLUDE = -I/home/caoboxi/test/c++/cpp_study/private
 
 objects =  private_class.o use_private.o
 
@@ -20,7 +20,7 @@ use_private : $(objects)
 	$(CXX) -o  $@ -g $(objects)
 
 $(objects) : %.o:%.cpp
-	$(CXX) -c -g  $< -o $@ $(INCLUDE)
+	$(CXX) -c -g  $< -o $@ $(INC_CLUDE)
 
 clean :
 	rm *.o use_private

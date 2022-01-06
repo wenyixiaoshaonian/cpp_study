@@ -1,1 +1,1 @@
-/usr/bin/cc    CMakeFiles/demo.dir/main.c.o  -o demo 
+/usr/bin/c++    -rdynamic CMakeFiles/demo.dir/use_demo.cpp.o CMakeFiles/demo.dir/src/Admin.cpp.o CMakeFiles/demo.dir/src/Student.cpp.o CMakeFiles/demo.dir/src/System.cpp.o CMakeFiles/demo.dir/src/main.c.o  -o demo 

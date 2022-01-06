@@ -123,32 +123,140 @@ demo/fast:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
-main.o: main.c.o
+src/Admin.o: src/Admin.cpp.o
 
-.PHONY : main.o
+.PHONY : src/Admin.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.c.o
-.PHONY : main.c.o
+src/Admin.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/Admin.cpp.o
+.PHONY : src/Admin.cpp.o
 
-main.i: main.c.i
+src/Admin.i: src/Admin.cpp.i
 
-.PHONY : main.i
+.PHONY : src/Admin.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.c.i
-.PHONY : main.c.i
+src/Admin.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/Admin.cpp.i
+.PHONY : src/Admin.cpp.i
 
-main.s: main.c.s
+src/Admin.s: src/Admin.cpp.s
 
-.PHONY : main.s
+.PHONY : src/Admin.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.c.s
-.PHONY : main.c.s
+src/Admin.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/Admin.cpp.s
+.PHONY : src/Admin.cpp.s
+
+src/Student.o: src/Student.cpp.o
+
+.PHONY : src/Student.o
+
+# target to build an object file
+src/Student.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/Student.cpp.o
+.PHONY : src/Student.cpp.o
+
+src/Student.i: src/Student.cpp.i
+
+.PHONY : src/Student.i
+
+# target to preprocess a source file
+src/Student.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/Student.cpp.i
+.PHONY : src/Student.cpp.i
+
+src/Student.s: src/Student.cpp.s
+
+.PHONY : src/Student.s
+
+# target to generate assembly for a file
+src/Student.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/Student.cpp.s
+.PHONY : src/Student.cpp.s
+
+src/System.o: src/System.cpp.o
+
+.PHONY : src/System.o
+
+# target to build an object file
+src/System.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/System.cpp.o
+.PHONY : src/System.cpp.o
+
+src/System.i: src/System.cpp.i
+
+.PHONY : src/System.i
+
+# target to preprocess a source file
+src/System.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/System.cpp.i
+.PHONY : src/System.cpp.i
+
+src/System.s: src/System.cpp.s
+
+.PHONY : src/System.s
+
+# target to generate assembly for a file
+src/System.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/System.cpp.s
+.PHONY : src/System.cpp.s
+
+src/main.o: src/main.c.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/main.c.s
+.PHONY : src/main.c.s
+
+use_demo.o: use_demo.cpp.o
+
+.PHONY : use_demo.o
+
+# target to build an object file
+use_demo.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/use_demo.cpp.o
+.PHONY : use_demo.cpp.o
+
+use_demo.i: use_demo.cpp.i
+
+.PHONY : use_demo.i
+
+# target to preprocess a source file
+use_demo.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/use_demo.cpp.i
+.PHONY : use_demo.cpp.i
+
+use_demo.s: use_demo.cpp.s
+
+.PHONY : use_demo.s
+
+# target to generate assembly for a file
+use_demo.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/use_demo.cpp.s
+.PHONY : use_demo.cpp.s
 
 # Help Target
 help:
@@ -159,9 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... demo"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Admin.o"
+	@echo "... src/Admin.i"
+	@echo "... src/Admin.s"
+	@echo "... src/Student.o"
+	@echo "... src/Student.i"
+	@echo "... src/Student.s"
+	@echo "... src/System.o"
+	@echo "... src/System.i"
+	@echo "... src/System.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... use_demo.o"
+	@echo "... use_demo.i"
+	@echo "... use_demo.s"
 .PHONY : help
 
 

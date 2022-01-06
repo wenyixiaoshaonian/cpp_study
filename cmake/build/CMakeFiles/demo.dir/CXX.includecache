@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/Admin.h
+iostream
+../inc/iostream
+string
+../inc/string
+
+../inc/Student.h
+string
+../inc/string
+iostream
+../inc/iostream
+
+../inc/System.h
+string
+../inc/string
+iostream
+../inc/iostream
+Admin.h
+../inc/Admin.h
+Student.h
+../inc/Student.h
+list
+../inc/list
+
+/home/caoboxi/test/c++/cpp_study/cmake/use_demo.cpp
+iostream
+-
+cstring
+-
+Admin.h
+/home/caoboxi/test/c++/cpp_study/cmake/Admin.h
+Student.h
+/home/caoboxi/test/c++/cpp_study/cmake/Student.h
+System.h
+/home/caoboxi/test/c++/cpp_study/cmake/System.h
+

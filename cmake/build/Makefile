@@ -123,6 +123,33 @@ demo/fast:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 src/Admin.o: src/Admin.cpp.o
 
 .PHONY : src/Admin.o
@@ -204,60 +231,6 @@ src/System.cpp.s:
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/System.cpp.s
 .PHONY : src/System.cpp.s
 
-src/main.o: src/main.c.o
-
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.c.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/main.c.o
-.PHONY : src/main.c.o
-
-src/main.i: src/main.c.i
-
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.c.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/main.c.i
-.PHONY : src/main.c.i
-
-src/main.s: src/main.c.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/src/main.c.s
-.PHONY : src/main.c.s
-
-use_demo.o: use_demo.cpp.o
-
-.PHONY : use_demo.o
-
-# target to build an object file
-use_demo.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/use_demo.cpp.o
-.PHONY : use_demo.cpp.o
-
-use_demo.i: use_demo.cpp.i
-
-.PHONY : use_demo.i
-
-# target to preprocess a source file
-use_demo.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/use_demo.cpp.i
-.PHONY : use_demo.cpp.i
-
-use_demo.s: use_demo.cpp.s
-
-.PHONY : use_demo.s
-
-# target to generate assembly for a file
-use_demo.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/use_demo.cpp.s
-.PHONY : use_demo.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -267,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... demo"
 	@echo "... edit_cache"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... src/Admin.o"
 	@echo "... src/Admin.i"
 	@echo "... src/Admin.s"
@@ -276,12 +252,6 @@ help:
 	@echo "... src/System.o"
 	@echo "... src/System.i"
 	@echo "... src/System.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... use_demo.o"
-	@echo "... use_demo.i"
-	@echo "... use_demo.s"
 .PHONY : help
 
 

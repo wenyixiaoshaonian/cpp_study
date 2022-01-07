@@ -30,7 +30,7 @@ Student.h
 list
 ../inc/list
 
-/home/caoboxi/test/c++/cpp_study/cmake/use_demo.cpp
+/home/caoboxi/test/c++/cpp_study/cmake/main.cpp
 iostream
 -
 cstring
@@ -41,4 +41,16 @@ Student.h
 /home/caoboxi/test/c++/cpp_study/cmake/Student.h
 System.h
 /home/caoboxi/test/c++/cpp_study/cmake/System.h
+
+/home/caoboxi/test/c++/cpp_study/cmake/src/Student.cpp
+Student.h
+/home/caoboxi/test/c++/cpp_study/cmake/src/Student.h
+
+/home/caoboxi/test/c++/cpp_study/cmake/src/System.cpp
+System.h
+/home/caoboxi/test/c++/cpp_study/cmake/src/System.h
+fstream
+/home/caoboxi/test/c++/cpp_study/cmake/src/fstream
+cstdlib
+-
 

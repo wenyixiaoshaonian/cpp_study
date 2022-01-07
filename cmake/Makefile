@@ -12,7 +12,6 @@
 
 CC ?= gcc
 CXX ?= g++
-SUBDIRS = $(CURDIR)/src
 
 SOURCES += $(wildcard $(CURDIR)/*.cpp)
 SOURCES += $(wildcard $(CURDIR)/src/*.cpp)

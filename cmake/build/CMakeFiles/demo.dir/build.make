@@ -57,18 +57,18 @@ include CMakeFiles/demo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/demo.dir/flags.make
 
-CMakeFiles/demo.dir/use_demo.cpp.o: CMakeFiles/demo.dir/flags.make
-CMakeFiles/demo.dir/use_demo.cpp.o: ../use_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/caoboxi/test/c++/cpp_study/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/use_demo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/use_demo.cpp.o -c /home/caoboxi/test/c++/cpp_study/cmake/use_demo.cpp
+CMakeFiles/demo.dir/main.cpp.o: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/caoboxi/test/c++/cpp_study/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo.dir/main.cpp.o -c /home/caoboxi/test/c++/cpp_study/cmake/main.cpp
 
-CMakeFiles/demo.dir/use_demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/use_demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/caoboxi/test/c++/cpp_study/cmake/use_demo.cpp > CMakeFiles/demo.dir/use_demo.cpp.i
+CMakeFiles/demo.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/caoboxi/test/c++/cpp_study/cmake/main.cpp > CMakeFiles/demo.dir/main.cpp.i
 
-CMakeFiles/demo.dir/use_demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/use_demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/caoboxi/test/c++/cpp_study/cmake/use_demo.cpp -o CMakeFiles/demo.dir/use_demo.cpp.s
+CMakeFiles/demo.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/caoboxi/test/c++/cpp_study/cmake/main.cpp -o CMakeFiles/demo.dir/main.cpp.s
 
 CMakeFiles/demo.dir/src/Admin.cpp.o: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/src/Admin.cpp.o: ../src/Admin.cpp
@@ -109,38 +109,23 @@ CMakeFiles/demo.dir/src/System.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/src/System.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/caoboxi/test/c++/cpp_study/cmake/src/System.cpp -o CMakeFiles/demo.dir/src/System.cpp.s
 
-CMakeFiles/demo.dir/src/main.c.o: CMakeFiles/demo.dir/flags.make
-CMakeFiles/demo.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/caoboxi/test/c++/cpp_study/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/demo.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/demo.dir/src/main.c.o   -c /home/caoboxi/test/c++/cpp_study/cmake/src/main.c
-
-CMakeFiles/demo.dir/src/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/caoboxi/test/c++/cpp_study/cmake/src/main.c > CMakeFiles/demo.dir/src/main.c.i
-
-CMakeFiles/demo.dir/src/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/caoboxi/test/c++/cpp_study/cmake/src/main.c -o CMakeFiles/demo.dir/src/main.c.s
-
 # Object files for target demo
 demo_OBJECTS = \
-"CMakeFiles/demo.dir/use_demo.cpp.o" \
+"CMakeFiles/demo.dir/main.cpp.o" \
 "CMakeFiles/demo.dir/src/Admin.cpp.o" \
 "CMakeFiles/demo.dir/src/Student.cpp.o" \
-"CMakeFiles/demo.dir/src/System.cpp.o" \
-"CMakeFiles/demo.dir/src/main.c.o"
+"CMakeFiles/demo.dir/src/System.cpp.o"
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
 
-demo: CMakeFiles/demo.dir/use_demo.cpp.o
+demo: CMakeFiles/demo.dir/main.cpp.o
 demo: CMakeFiles/demo.dir/src/Admin.cpp.o
 demo: CMakeFiles/demo.dir/src/Student.cpp.o
 demo: CMakeFiles/demo.dir/src/System.cpp.o
-demo: CMakeFiles/demo.dir/src/main.c.o
 demo: CMakeFiles/demo.dir/build.make
 demo: CMakeFiles/demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/caoboxi/test/c++/cpp_study/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/caoboxi/test/c++/cpp_study/cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
